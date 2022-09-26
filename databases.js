@@ -1,4 +1,4 @@
-import { createPool } from "mysql2";
+import { createPool } from "mysql2/promise";
 
 export const pool = createPool({
     host: 'localhost',
@@ -9,6 +9,8 @@ export const pool = createPool({
 });
 
 // Consultas SQL
+/* 
 pool.query('SELECT * FROM employees', (err, result) => {
-    
+
 })
+*/
